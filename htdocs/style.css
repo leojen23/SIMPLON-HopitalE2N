@@ -1,0 +1,284 @@
+
+h2{
+    color: #277687;
+   
+}
+
+/* MAIN PAGE----------------------------------------------- */
+
+header{
+    background-image: url("https://images.unsplash.com/photo-1485848395967-65dff62dc35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+    background-position: bottom;
+    height: auto;
+
+}
+.navbar{
+    background-color: transparent;
+    opacity: 0.7;
+    height: 60px;
+}
+
+.jumbotron-main{
+    height: auto;
+    background-color: transparent;
+    color: white;
+    
+    margin:0;
+}
+.jumbotron-main h1{
+   font-size:4rem; 
+}
+
+.jumbotron-main p{
+    font-size:2.2rem;
+    
+ }
+
+ /* CARD SECTION ----------------------------------------------------------------------*/
+.container-choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    margin: 2rem 0;
+}
+
+.card{
+    height: auto;
+    margin:2rem;
+    box-shadow: 0px 0px 6px 1px grey;
+    transition:0.4s;
+}
+.card:hover{
+    box-shadow: 0px 0px 8px 4px grey;
+}
+.card-body{
+    
+    text-align: center;
+}
+.card a{
+    margin: 1rem;
+}
+
+/* VALIDATION MESSAGE DISPLAY ----------------------------------- */
+.container-validationMsg{
+ 
+    height: 250px;
+    padding:3rem;
+
+}
+.validationMsg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.validationMsg a{
+    width: 160px;
+   
+}
+
+/* ADD A CLIENT FORM PAGE------------------------------------------------------------ */
+.container-addClientForm {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.addClientForm{
+    margin: 2rem;
+}
+.addClientForm h2{
+    margin: 2rem 0;
+}
+.addClientForm button{
+    display: block;
+    margin: 3rem auto;
+    width: 100px;
+}
+
+.addClientForm input{
+    width: 600px;
+}
+
+/* PAGE LISTS------------------------------------------------------------ */
+
+.container-list{
+  padding: 4rem;
+
+}
+
+.listHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+}
+.listHeader h2{
+    
+    display: inline-block; 
+}
+.listHeader a{
+    margin-left: 3rem;
+    display: inline-block; 
+}
+
+table{
+    border: 1px solid black;
+}
+table a{
+    
+    width: 100px;
+}
+
+thead tr{
+    background-color: #277687;
+    color: white;
+}
+tbody tr:nth-of-type(odd){
+    background-color:  rgb(213, 219, 215);
+}
+
+table th{
+    width: 50px;
+}
+table td{
+    width: 50px;
+}
+
+
+/* PAGE PROFILE CLIENT---------------------------------------------------------- */
+
+.container-infos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 4rem;
+}
+
+.profile-details{
+    border-right: 0.5px solid  #277687;
+    border-left: 0.5px solid  #277687;
+}
+.bookingInfo{
+    border-right: 0.5px solid  #277687;
+}
+.profile-details, .bookingInfo{
+    text-align: center;
+ 
+}
+.profile-details h3, .bookingInfo h3{
+    margin: 2rem;
+   
+}
+
+.profile-change{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-change input{
+    margin: 1rem;
+}
+
+
+/* MODIFICATIONS FORMS */
+
+.modal-content{
+    height: 400px;
+    padding:0 1rem ;
+   
+}
+.form-profile-mod input{
+    
+    margin: 1rem 0;
+}
+
+.form-profile-mod button, .form-profile-mod button a{
+
+    width: 100px;
+    margin: 1rem;
+}
+
+
+/* BOOKING FORM PAGE ---------------------------------------------------------- */
+
+
+.container-bookings{
+    /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1524222928538-afb4409a0d70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover; */
+    position: relative;
+    height: 400px;
+    padding: 4rem;
+    text-align: center;
+    
+}
+
+.bg-booking-opacity{
+    background: url("https://images.unsplash.com/photo-1524222928538-afb4409a0d70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right:0;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+}
+
+.form-bookings{
+    
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-bookings h2{
+    margin: 1rem 0;
+   
+}
+.form-bookings p{
+    color: gray;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+
+}
+.form-bookings input{
+    
+    background-color: transparent;
+    border: 0.5px solid black;
+    margin: 0 2rem;
+}
+
+.form-bookings select option{
+ 
+    background-color: transparent;
+    border: 0.5px solid black;
+    margin: 0 2rem;
+}
+.form-bookings select{
+
+    background-color: transparent;
+    border: 0.5px solid black;
+    margin: 0 2rem;
+}
+.form-bookings a, .form-bookings button{
+    width:120px;
+    margin: 0 1rem;
+    border-width: 2px;
+
+}
+
+
+/* PAGE MODIFICATION DU RENDEZ VOUS*/
+
+
+.form-bookingMod{ 
+    display:flex;
+    justify-content: flex-end;
+
+}
+
